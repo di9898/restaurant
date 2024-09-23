@@ -111,12 +111,7 @@ nav ul li a{
 nav ul li a:hover{
     color: #df581e;
 }
-.table-img {
-    position: absolute;
-    /* top: 0; */
-    right: 560px;
-    display: none;
-}
+
 
 
 .mobile-menu img:last-child,.mm-wrapper--opened .mobile-menu img:first-child{
@@ -149,7 +144,18 @@ nav#menu{
 /*--------banner-section-start--*/
 .banner{
     padding-top: 100px;
+    position: relative;
 
+}
+.banner .row:after{
+    background: url(../images/lamp.png) no-repeat;
+    background-size: cover;
+    width: 95px;
+    height: 295px;
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: 250px;
 }
 .banner .row{
     background-image: url(../images/banner-2.png);
@@ -157,6 +163,7 @@ nav#menu{
     background-size: cover;
     width: 100%;
     height: 600px;
+    position: relative;
     background-position: bottom center;
 }
 .banner-content{
@@ -512,6 +519,17 @@ input[type="submit"] {
     padding-right: 50px;
      background: #faf8ef;
     border-radius: 50px;
+    position: relative;
+}
+.middle-6 .row:after{
+    background: url(../images/image-7-1.png) no-repeat;
+    background-size: cover;
+    width: 265px;
+    height: 216px;
+    content: "";
+    position: absolute;
+    top: 75px;
+    right: 45%;
 }
 .max-content-6{
     display: table-cell;
@@ -862,10 +880,20 @@ textarea::placeholder{
     line-height: 17px;
 }
 
+.table-img {
+    position: absolute;
+    /* top: 0; */
+    right: 180px;
+}
+.middle-6 .row:after {
+    top: 30px;
+    right: 30%;
+}
 
-
-
-
+.banner .row:after {
+    top: -100px;
+    right: 170px;
+}
 
 
 .footer-col h2,.footer-right h2 {
@@ -886,7 +914,9 @@ textarea::placeholder{
     display: inline-block;
     padding: 0 10px;
 }
-
+.middle-8 .row{
+    height: auto;
+}
 
 }
 @media(max-width: 1023px){
@@ -965,8 +995,19 @@ textarea::placeholder{
     padding: 10px 40px;
 
 }
+nav ul li a {
+    font-size: 17px;
+    line-height: 19px;
+    color: #fff;
+    padding: 0 20px;
+    font-weight: 700;
+}
 
-
+.table-img {
+    position: absolute;
+    /* top: 0; */
+    right: 130px;
+}
 
 }
 @media(max-width: 979px){
@@ -1017,10 +1058,14 @@ textarea {
     border-radius: 20px;
     border: none;
 }
+.middle-6 .row:after{
+    display: none;
+}
 
 
-
-
+nav ul li a {
+    padding: 0 15px;
+}
 
 .footer-row {
     width: 100%;
@@ -1030,6 +1075,9 @@ textarea {
 .footer-right {
     width: 100%;
     text-align: center;
+}
+.icon-footar {
+    padding-top: 30px;
 }
 }
 @media(max-width: 767px){
@@ -1063,7 +1111,9 @@ textarea {
     display: block;
 }
 
-
+.banner .row:after{
+    display: none;
+}
 
 
 
@@ -1189,6 +1239,14 @@ textarea {
 }
 .banner-image {
     display: block;
+}
+.middle-1-content span {
+    font-size: 15px;
+    line-height: 17px;
+}
+label {
+    font-size: 15px;
+    line-height: 17px;
 }
 
 }
