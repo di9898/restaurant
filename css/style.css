@@ -927,9 +927,6 @@ textarea::placeholder{
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    header{
-        padding-bottom: 0;
-    }
 .bg-2-img {
     padding-bottom: 10px;
 }
@@ -1082,8 +1079,15 @@ nav ul li a {
 .icon-footar {
     padding-top: 30px;
 }
+
+
+
+
+
+
 }
 @media(max-width: 767px){
+
     nav{
         display: none;
     }
@@ -1091,7 +1095,11 @@ nav ul li a {
         display: none;
     }
     header{
+        background: #12202f;
+        padding-top: 0;
+        padding-bottom: 0;
         text-align: center;
+        border-radius: 0;
     }
     .banner-content{
         text-align: center;
